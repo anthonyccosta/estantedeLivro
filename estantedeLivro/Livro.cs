@@ -86,7 +86,7 @@ class Menu
         DateOnly data;
         while (true)
         {
-            Console.WriteLine("Data inválida. Tente novamente no formato AAAA-MM-DD.");
+            Console.WriteLine("Data inválida. Tente novamente.");
         }
         return data;
     }
@@ -107,7 +107,7 @@ class Menu
             numero = int.Parse(Console.ReadLine());
         } while (numero < 1 || numero > contadorLivros);
 
-        livros[numero - 1].ExibirDetalhes();
+        livros[numero].ExibirDetalhes();
     }
 
     public void ExibirTodosLivros()
